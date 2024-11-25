@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Button } from 'bootstrap'
 import './Login.css'
 import user_icon from '../Assets/username.png'
 
@@ -18,8 +19,8 @@ export const Login = () => {
             </div>    
         </div>
         <div className="submit-container">
-            <div className={action==="Login"?"submit gold":"submit"} onClick={() => {setAction("Login")}}>Login</div>
-            <div className={action==="Sign Up"?"submit gold":"submit"} onClick={() => {setAction("Sign Up")}}>Sign Up</div>
+            <Button className={action==="Login"?"submit gold":"submit"} onClick={() => {setAction("Login")}}>Login</Button>
+            <Button className={action==="Sign Up"?"submit gold":"submit"} onClick={() => {setAction("Sign Up")}}>Sign Up</Button>
         </div>
     </div>
   )
