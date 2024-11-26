@@ -20,7 +20,9 @@ export const Signup = () => {
             <div className='inputs'>
                 <div className='input'>
                     <img src={user_icon} alt='user_icon' className='icon' style={{height: '20px'}}/>
-                    <input type='text'  id='user' placeholder='Username'/>
+                    <input  className='user' type='text'  id='user' placeholder='Username'/>
+                    <input className='email' type='text'  id='email' placeholder='Email'/>
+                    <input className='pass' type='text'  id='password' placeholder='Password'/>
                 </div>    
             </div>
             <div className="submit-container">
