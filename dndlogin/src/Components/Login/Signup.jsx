@@ -1,21 +1,20 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import './Login.css'
+import './Signup.css'
 import user_icon from '../Assets/username.png'
 import { useNavigate } from 'react-router-dom';
 
-
-export const Login = () => {
-        const navigate = useNavigate();
-        const handleSignupRedirect = () => {
-                navigate('/Signup');
+export const Signup = () => {
+    const navigate = useNavigate();
+        const handleLoginRedirect = () => {
+                navigate('/');
               };
-return (
+  return (
     <div>
         <div className='banner'>DnD Character Companion</div>
         <div className='container'>
             <div className='header'>
-                <div className='text'>Login</div>
+                <div className='text'>Sign Up</div>
                 <div className='underline'></div>
             </div>
             <div className='inputs'>
@@ -25,12 +24,12 @@ return (
                 </div>    
             </div>
             <div className="submit-container">
-                <Button type='button' className='btn btn-primary'>Login</Button>
-                <Button type='button' className='btn btn-link' onClick={handleSignupRedirect}>Sign Up</Button>
+                <Button type='button' className='btn btn-primary' onClick={handleLoginRedirect}>Login</Button>
+                <Button type='button' className='btn btn-link'>Submit</Button>
             </div>
         </div>
     </div>
-)
+  )
 }
 
-export default Login
+export default Signup
