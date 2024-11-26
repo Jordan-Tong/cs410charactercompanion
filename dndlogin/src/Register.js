@@ -32,6 +32,11 @@ const Register = () => {
   return (
     <div>
         <p ref={errRef} className={errMessage ? "errMessage" : "offscreen"} aria-live='assertive'>{errMessage}</p>
+        <h1>Register</h1>
+        <form>
+            <label htmlFor='user'>Username</label>
+            <input type='text' id='user' ref={userRef} autoComplete='off' onChange={(e) => setUser(e.target.value)}  required aria-invalid={validUseronFocus={() => setUserFocus(true)} onBlur={() => setUserFocus(false)} />
+        </form>
     </div>
   )
 }
