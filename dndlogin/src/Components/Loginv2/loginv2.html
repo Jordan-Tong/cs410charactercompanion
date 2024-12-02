@@ -19,14 +19,21 @@
                 <div class="input">
                     <img src="../Assets/username.png" alt="user_icon" class="icon" style="height: 20px;"/>
                     <input  class="user" type="text"  id="user" placeholder="Username"/>
-                    <input class="email" type="text"  id="email" placeholder="Email"/>
-                    <input class="pass" type="text"  id="password" placeholder="Password"/>
+                </div>
+                <div class="input">    
+                    <img src="../Assets/email.png" alt="email_icon" class="icon" style="height: 20px;"/>
+                    <input class="email" type="email"  id="email" placeholder="Email"/>
+                </div>
+                <div class="input">
+                    <img src="../Assets/password.png" alt="password_icon" class="icon" style="height: 20px;"/>
+                    <input class="pass" type="password"  id="password" placeholder="Password"/>
+                    </div>
                 </div>    
             </div>
             <div class="submit-container">
-                <button type="button" class="btn btn-primary" onClick={handleLoginRedirect}>Login</button>
-                <div class="text">Don't have an account? <a href="./signup.html">Sign up</a></div>
-                <button type="button" class="btn btn-link">Submit</button>
+                <div class="submit"><button type="button" class="btn btn-primary">Login</button></div>
+                <div class="text">Don't have an account?
+                <button type="button" class="btn btn-link">Signup</button> </div>
             </div>
         </div>
     </div>
